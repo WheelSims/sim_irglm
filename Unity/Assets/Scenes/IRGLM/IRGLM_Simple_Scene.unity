@@ -351,7 +351,12 @@ PrefabInstance:
     - target: {fileID: 4857901631311082911, guid: 02bebbf7b99b34c24b3af80e152afc8a,
         type: 3}
       propertyPath: fRollSimulator
-      value: 0
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5116378273140125719, guid: 02bebbf7b99b34c24b3af80e152afc8a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6251102742449698547, guid: 02bebbf7b99b34c24b3af80e152afc8a,
         type: 3}
