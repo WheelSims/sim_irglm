@@ -13,3 +13,6 @@
 [submodule "Unity/Assets/vr_street_lights"]
 	path = Unity/Assets/vr_street_lights
 	url = https://github.com/WheelSims/vr_street_lights.git
+[submodule "Haptics/haptics_common"]
+	path = Haptics/haptics_common
+	url = https://github.com/WheelSims/haptics_common
