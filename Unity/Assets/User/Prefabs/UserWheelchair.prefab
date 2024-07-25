@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cdb10632a3c948c99cd373620d2bbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultFriction: 0.0113
+  defaultFriction: 0.02
   friction: 0
   collisionfound: 0
 --- !u!114 &2706814333452573236
@@ -925,6 +925,7 @@ MonoBehaviour:
   hardwareEnable: 0
   wholeMass: 96
   wheelDistance: 0.5325
+  forceReset: 0
 --- !u!114 &7290066145323434979
 MonoBehaviour:
   m_ObjectHideFlags: 0
