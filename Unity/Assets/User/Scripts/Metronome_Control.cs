@@ -8,7 +8,9 @@ public class Metronome_Control : MonoBehaviour
     // Reference to the Metronome script
     public Metronome metronome;
     public UDPSignalReceiver udpsignalreceiver;
+    public KeyboardControl keyboardcontrol;
     public float newBPM=60;
+
 
     void Start()
     {
@@ -18,7 +20,7 @@ public class Metronome_Control : MonoBehaviour
             return;
         }
 
-        // Optionally set the initial BPM
+        // Set the updated BPM if necessary
         metronome.SetBPM(newBPM);
 
         // Force start the metronome
@@ -32,12 +34,22 @@ public class Metronome_Control : MonoBehaviour
     void Update()
     {
         
-        if (udpsignalreceiver.linearVelocity>0)
+        if (metronome != null)
+        {
+            metronome.SetBPM(newBPM);
+        }
+
+        // Check if movement is detected
+        bool isMoving = (udpsignalreceiver.linearVelocity > 0 || keyboardcontrol.linearSpeed > 0);
+
+        // If moving and the metronome is not running, start it
+        if (isMoving && !metronome.isRunning)
         {
             if (metronome != null)
             {
                 metronome.StartMetronome();
-                Debug.Log("Metronome started.");
+                metronome.isRunning = true;
+                Debug.Log("Metronome started during movement.");
             }
             else
             {
@@ -45,19 +57,19 @@ public class Metronome_Control : MonoBehaviour
             }
         }
 
-        if (udpsignalreceiver.linearVelocity ==0)
+        // If no movement and the metronome is running, stop it
+        if (!isMoving && metronome.isRunning)
         {
             if (metronome != null)
             {
                 metronome.StopMetronome();
-                Debug.Log("Metronome stopped.");
+                metronome.isRunning = false;
+                Debug.Log("Metronome stopped during stop.");
             }
             else
             {
                 Debug.LogError("Metronome script reference is missing in Update.");
             }
         }
-
-     
     }
 }

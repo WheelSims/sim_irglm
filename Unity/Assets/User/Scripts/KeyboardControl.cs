@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyboardControl : MonoBehaviour
 {
+    public float linearSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class KeyboardControl : MonoBehaviour
     void Update()
     {
         // React to keyboard
-        float linearSpeed = 0f;  // default
+        linearSpeed = 0f;  // default
         float angularSpeed = 0f;  // default
         if (Input.GetKey(KeyCode.UpArrow)) linearSpeed = 1f;  // m/s
         if (Input.GetKey(KeyCode.DownArrow)) linearSpeed = -0.5f;  // m/s

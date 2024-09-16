@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class Metronome : MonoBehaviour
 {
-    public float bpm = 60f; // Beats per minute
+    public float bpm ; // Beats per minute
     private float secondsPerBeat;
     private float nextTickTime;
     private AudioSource audioSource;
-    private bool isRunning = false; // Flag to track if the metronome is running
+    public bool isRunning = false; // Flag to track if the metronome is running
     
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        bpm = 60f;
 
         // Check if AudioSource component is properly assigned
         if (audioSource == null)
