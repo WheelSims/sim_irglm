@@ -12,7 +12,7 @@ public class UDPSignalSender : MonoBehaviour
      public CollisionDetect collisiondetect;
      public double hardwareEnable = 0;
 
-     public double wholeMass=94;
+     public double wholeMass=94.4;
     public double wheelDistance = 0.60;
     public bool forceReset = false;
 

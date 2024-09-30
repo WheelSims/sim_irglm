@@ -839,6 +839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4761329b52bd4f98af7dabd7c3709a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linearSpeed: 0
 --- !u!54 &3579049772442321390
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -890,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cdb10632a3c948c99cd373620d2bbff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultFriction: 0.0193
+  defaultFriction: 0.01325
   friction: 0
   collisionfound: 0
 --- !u!114 &2706814333452573236
@@ -922,8 +923,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisiondetect: {fileID: 5926613796609377445}
   hardwareEnable: 0
-  wholeMass: 96
-  wheelDistance: 0.5325
+  wholeMass: 94.4
+  wheelDistance: 0.6
   forceReset: 0
 --- !u!1 &6626980519191407961
 GameObject:
