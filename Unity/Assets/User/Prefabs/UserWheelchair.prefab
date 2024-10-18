@@ -243,7 +243,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.392, z: 0.426}
-  m_LocalScale: {x: 0.53, y: 0.61, z: 0.69}
+  m_LocalScale: {x: 0.4, y: 0.61, z: 0.69}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6251102742449698547}
@@ -923,7 +923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisiondetect: {fileID: 5926613796609377445}
   hardwareEnable: 0
-  wholeMass: 94.4
+  wholeMass: 81.1
   wheelDistance: 0.6
   forceReset: 0
 --- !u!1 &6626980519191407961

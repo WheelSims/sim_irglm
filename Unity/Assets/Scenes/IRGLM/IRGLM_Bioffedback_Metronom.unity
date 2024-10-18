@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 1158223670299794894, guid: 0633c440007b149db97c4a7998a9f592,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1158223670299794894, guid: 0633c440007b149db97c4a7998a9f592,
         type: 3}
@@ -222,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 6251102742449698547, guid: 02bebbf7b99b34c24b3af80e152afc8a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -120
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 6251102742449698547, guid: 02bebbf7b99b34c24b3af80e152afc8a,
         type: 3}
@@ -307,7 +307,7 @@ MonoBehaviour:
   metronome: {fileID: 1414533627}
   udpsignalreceiver: {fileID: 779110376}
   keyboardcontrol: {fileID: 779110389}
-  newBPM: 60
+  newBPM: 40
 --- !u!114 &779110389 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8991130570397382177, guid: 02bebbf7b99b34c24b3af80e152afc8a,
