@@ -72,10 +72,10 @@ public class UDPSignalReceiver : MonoBehaviour
             // Update the speed of the cube
 
             // Rotate around y - axis
-            transform.Rotate(0, (float)(angularVelocity * Time.fixedDeltaTime*(-180/Mathf.PI)), 0,Space.World);
+            transform.Rotate(0, (float)(angularVelocity * Time.deltaTime * (-180/Mathf.PI)), 0,Space.World);
 
             // Move forward / backward
-           transform.Translate(0, 0, (float)(linearVelocity * Time.fixedDeltaTime));
+           transform.Translate(0, 0, (float)(linearVelocity * Time.deltaTime));
            
 
             lastincrementindex = currentincrementindex;
